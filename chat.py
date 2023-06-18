@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtGui, QtWidgets
-import pymysql
 import sys
 import threading
 from PyQt5.QtWidgets import *
 import socket
 import cv2
 import re
-import time
 import qrc.picture
 import qrc.res
 import qrc.text
@@ -289,10 +287,10 @@ class Ui_MainWindow(QMainWindow):
             thread.start()
 
 
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()  # 创建窗体对象
-    ui = Ui_MainWindow(('ice'))  # 创建 PyQt 设计的窗体对象
-    ui.setupUi(MainWindow)  # 调用 PyQt 窗体的方法对窗体对象进行初始化
-    MainWindow.show()
-    sys.exit(app.exec_())  # 程序关闭时退出进程
+# if __name__ == '__main__':
+#     app = QtWidgets.QApplication(sys.argv)
+#     MainWindow = QtWidgets.QMainWindow()  # 创建窗体对象
+#     ui = Ui_MainWindow(('ice'))  # 创建 PyQt 设计的窗体对象
+#     ui.setupUi(MainWindow)  # 调用 PyQt 窗体的方法对窗体对象进行初始化
+#     MainWindow.show()
+#     sys.exit(app.exec_())  # 程序关闭时退出进程
